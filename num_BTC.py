@@ -8,7 +8,7 @@ def num_BTC(b):
     rewardPerBlock = 50
     while(n_halves > 0):
         c = c + rewardPerBlock * 210000
-        n_halves -=
+        n_halves = n_halves - 1
         rewardPerBlock = rewardPerBlock * 0.5
     
     c = c + (b % 210000) * rewardPerBlock
